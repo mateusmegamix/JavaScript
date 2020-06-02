@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<title>JavaScript IMC</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="js/IMC.js"></script>
+<link rel="stylesheet" href="css/style.css">
+	
+<style type="text/css">
+	img, table { width:350px; }
+	fieldset { width:330px; }
+	label { display:block; float:leaf; }
+	label, input { width:68px; margin:3px 0; }
+	th, td { border:1px solid #ccc; font-size:0.8em; }
+</style>
+
+</head>
+
+
+<body>
+	<img src="img/boo.jpg" alt="boo" />
+	
+	<form id="formulario">
+		<fieldset>
+			<legend>Cáculo do IMC</legend>
+		
+			<label for="kilos">Kilos:</label>
+			<input type="text" name="kilos" />
+		
+			<label for="metros">Metros:</label>
+			<input type="text" name="metros" />
+		
+			<label for="centimetros">Cm:</label>
+			<input type="text" name="centimetros"/>
+		
+			<label for="imc">IMC:</label>
+			<input type="text" name="imc" disabled="disabled"/>
+		
+		<a href="#" onclick = "calcularIMC();">Calcular</a>
+		
+		</fieldset>
+	</form>
+	
+	<table>
+		<tr><th>IMC</th><th>Classificação</th></tr>
+		<tr><th>&lt; 20</th><th>Morador do Acre</th></tr>
+		<tr><th>20 a 25</th><th>Peso Ideal</th></tr>
+		<tr><th>25 a 30</th><th>Sobre Coxa</th></tr>
+		<tr><th>30 a 35</th><th>Obesidade Boo</th></tr>
+		<tr><th>35 a 40</th><th>Obesidade Severa</th></tr>
+		<tr><th>40 a 50</th><th>Obesidade Móbida</th></tr>
+		<tr><th>&gt; 50</th><th>Netto</th></tr>
+	</table>
+
+</body>
+
+</html>
